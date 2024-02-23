@@ -1,0 +1,49 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+.h1 {
+  color: navy;
+  text-align: center;
+}
+
+.p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#list li {
+  margin-bottom: 10px;
+}
+
+.clock {
+  font-size: 50px;
+  text-align: center;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blink {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

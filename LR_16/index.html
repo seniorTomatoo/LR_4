@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>LR_18</title>
+  
+</head>
+<body>
+
+  <h1>Form Example </h1>
+    <form id="myForm">
+        <label for="textInput">Введите текст:</label>
+        <input type="text" id="textInput"><br><br>
+
+        <label>Зависимые переключатели:</label><br>
+        <input type="radio" name="dependentRadio" value="option1"> 1<br>
+        <input type="radio" name="dependentRadio" value="option2"> 2<br><br>
+
+        <label>Независимые переключатели:</label><br>
+        <input type="checkbox" id="checkBox1" value="checkBox1"> 1<br>
+        <input type="checkbox" id="checkBox1" value="checkBox2"> 2<br><br>
+
+        <label for="dropdown">Выпадающий список:</label>
+        <select id="dropdown">
+            <option value="option1"> 1</option>
+            <option value="option2"> 2</option>
+            <option value="option3"> 3</option>
+        </select><br><br>
+
+        <button onclick="submitForm()">Кнопка</button>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br><br>
+
+        <label for="multiLineText">Многострочное текстовое поле:</label><br>
+        <textarea id="multiLineText" rows="4" cols="50"></textarea>
+    </form>
+
+    <h1>Переключение цвета</h1>
+    <input type="text" id="textField">
+    <button id="colorButton" onclick="changeColor()">Изменить цвет</button>
+
+    <h1>Поиск строки</h1>
+    <textarea id="multiLineText" rows="4" cols="50"></textarea><br><br>
+    <input type="reset" value="Reset" onclick="compareText()">
+
+    <form id="myForm">
+        <label for="radio">Radio:</label><br>
+        <input type="radio" id="radio" name="radio" value="option1">
+        <label for="option1">1</label>
+        <input type="radio" id="radio" name="radio" value="option2">
+        <label for="option2">2</label><br><br>
+
+        <label for="checkbox">Checkboxes:</label><br>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+        <label for="checkbox1">1</label><br>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+        <label for="checkbox2">2</label><br><br>
+
+        <label for="select">Dropdown:</label><br>
+        <select id="select" name="select" multiple>
+            <option value="option1">1</option>
+            <option value="option2">2</option>
+            <option value="option3">3</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit" onclick="validateForm(event)">
+    </form>
+
+    <div id="output"></div>
+
+    <button id="customButton">Нажмите меня</button>
+    <input type="submit" id="submitButton">
+   
+  <script src="script.js"> </script>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛР16</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    /* 3 задание */
+
+    <h1>Пример доступа к элементу и проверки равенства переменных</h1>
+
+    <p id="targetElement">Целевой элемент</p>
+
+    /*1 задние */
+
+    <h2>H2</h2>
+    <p>Данный документ имеет в body дочерние узлы </p>
+    <ul>
+      <li>Элемент списка 1 </li>
+      <li>Элемент списка 2</li>
+      <li>Элемент списка 3</li>
+    </ul>
+    Все они являются дочерними узлами элемента `body`
+    <h2>Ещё несколько примеров дочерних узлов элемента `body`</h2>
+    <p>BodyBaggy (P.s `table`, `div`, `script` это так же дочерние узелы)</p>
+    <table border="1">
+      <tr>
+        <th>Зерновое</th>
+        <th>Ягодное</th>
+      </tr>
+      <tr>
+        <td>Пшеничный смузи</td>
+        <td>Вишневый шейк</td>
+      </tr>
+      <tr>
+        <td>Солодовый коктейль</td>
+        <td>Смородиневый морсик</td>
+      </tr>
+    </table>
+    <div id="div1">Это тоже является дочерним узлом</div>
+    <div id="div2">Точно так же как и предыдущий</div>
+
+    /*2 задние */
+
+    <h1>Динамическое управление списком</h1>
+
+    <button onclick="createList('unordered')">
+      Создать неупорядоченный список
+    </button>
+    <button onclick="createList('ordered')">
+      Создать упорядоченный список
+    </button>
+    <br /><br />
+
+    <button onclick="addToBeginning()">Добавить элемент в начало списка</button>
+    <button onclick="addToEnd()">Добавить элемент в конец списка</button>
+    <br /><br />
+
+    <button onclick="changeColor()">
+      Изменить цвет четных элементов списка
+    </button>
+
+    <div id="list-container"></div>
+    <br />
+
+    /* 4 задание */
+
+    <h1>Смена изображений и названий</h1>
+    <figure>
+      <img
+        id="displayImg"
+        src="pictures/image1.png"
+        alt="Изображение 1"
+        onclick="changeImage()"
+      />
+      <figcaption id="caption">Басист </figcaption>
+    </figure>
+
+    /* 6 задание */
+
+    <h1>Изменение адреса ссылки</h1>
+
+    <a id="myLink" href="#">Изменяемая ссылка</a><br />
+
+    <button onclick="changeLink('https://www.youtube.com')">Ссылка 1</button>
+    <button onclick="flipLink('https://www.google.com')">Ссылка 2</button>
+    <button onclick="updateLink('https://www.apple.com')">Ссылка 3</button
+    ><br />
+
+    <div class="slider">
+      /* 5 задание*/
+      <div class="slides" id="slides">
+          <img class="slide" src="pictures/image1.png">
+          <img class="slide" src="pictures/image2.png">
+          <img class="slide" src="pictures/image3.png">
+          <img class="slide" src="pictures/image4.png">
+          <img class="slide" src="pictures/image5.png">
+      </div>
+  </div>
+  <button type="button" onclick="nextSlide()" id="changePic">следующий слайд</button>
+
+  <br>
+    /* 7 задание */
+
+    <button onclick="TableCreation()">Создать кастомную таблицу</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

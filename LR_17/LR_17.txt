@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>LR_19</title>
+  
+</head>
+<body>
+   <h1>JSON-строка</h1>
+    <button onclick="createCountry()">Создать JSON-строку</button>
+    <p id="output"></p>
+
+    <h1>Преобразование JSON-строки</h1>
+    <input type="text" id="jsonString">
+    <button onclick="parseJson()">Преобразовать</button>
+  <script src="script.js"> </script>
+</body>
+</html>
+

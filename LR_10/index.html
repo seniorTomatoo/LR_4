@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LR_12</title>
+  
+
+</head>
+<body>
+
+  <h1>Определение поры года</h1>
+  <label for="season">Выберите пору года:</label>
+  <select id="season">
+    <option value="Зима">Зима</option>
+    <option value="Весна">Весна</option>
+    <option value="Лето">Лето</option>
+    <option value="Осень">Осень</option>
+  </select>
+  <button onclick="showSeasonMonths()">Показать месяцы</button>
+  <p id="result_season"></p>
+
+
+
+  <h1>Определение возраста</h1>
+  <label for="day">День рождения:</label>
+  <input type="number" id="day" min="1" max="31">
+  <label for="month">Месяц рождения:</label>
+  <select id="month">
+    <option value="0">Январь</option>
+    <option value="1">Февраль</option>
+    <option value="2">Март</option>
+    <option value="3">Апрель</option>
+    <option value="4">Май</option>
+    <option value="5">Июнь</option>
+    <option value="6">Июль</option>
+    <option value="7">Август</option>
+    <option value="8">Сентябрь</option>
+    <option value="9">Октябрь</option>
+    <option value="10">Ноябрь</option>
+    <option value="11">Декабрь</option>
+  </select>
+  <label for="year">Год рождения:</label>
+  <input type="number" id="year">
+  <button onclick="calculateAge()">Определить возраст</button>
+  <p id="result_age"></p>
+
+
+  <h1>Нажатие кнопки по времение от Старта к Стоп</h1>
+
+  <button id="startButton">Старт</button>
+  <button id="endButton">Стоп</button>
+
+  <p id="timeElapsed"></p>
+
+  <h1>Определение минимального значение в масиви</h1>
+  <label>Ваш масив:</label>
+  <input id="massif" placeholder="Пример 1,2,4...">
+  <button onclick="findMin()">Определяим минимайльное число в масиве</button>
+  <p id="result_min"></p>
+
+  <h1>Поиск позиции подстроки</h1>
+  <label for="string">Строка:</label>
+  <input type="text" id="string">
+  <br><br>
+  <label for="substring">Символ:</label>
+  <input type="text" id="substring">
+  <br><br>
+  <button onclick="findPosition()">Найти позицию</button>
+  <br><br>
+  <p id="result_positions"></p>
+
+  <h1>Проверка числа на четность и нечетность</h1>
+  <label for="number">Введите число:</label>
+  <input type="number" id="numberInput" placeholder="Введичи чило">
+  <br><br>
+  <button onclick="checkOdd()">Проверить четность и нечетность</button>
+  <br><br>
+  <p id="result_odd"></p>
+
+  <h1>Поиск цифры в строке</h1>
+  <input type="text" id="stringInput" placeholder="Введите текс">
+  <button onclick="checkStringNumber()">Проверить</button>
+  <p id="result_string"></p>
+
+  <h1>Проверка строки на символ </h1>
+  <input type="text" id="inputValue" placeholder="Введите строку">
+  <input type="text" id="characterInput" placeholder="Введите символ">
+  <button onclick="checkString()">Проверить</button>
+  <p id="result_string_check"></p>
+
+  <h1>Проверка на палиндромом</h1>
+  <input type="text" id="stringInput" placeholder="Введите строку">
+  <button onclick="checkPalindrome()">Проверить</button>
+  <p id="result_palindrome"></p>
+  
+<script src="script.js"> </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

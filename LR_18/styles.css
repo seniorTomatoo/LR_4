@@ -1,0 +1,33 @@
+table, th, td, tr {
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+th:first-child, td:first-child, tr:first-child {
+    background-color: rgb(111, 230, 141);
+    color: white;
+}
+td:not(:first-child), tr:not(:first-child) {
+    background-color: rgb(187, 173, 238);
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    font-family: 'Lobster', cursive;
+}
+
+
+.toggle-button {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.on {
+    background-color: #2039b7;
+    color: white;
+}
