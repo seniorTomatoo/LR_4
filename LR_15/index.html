@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>LR_17</title>
+  
+</head>
+<body>
+   <input type="text" id="inputField" oninput="displayCharacter(this.value)">
+   <div id="output"></div>
+   <br><br><br><br>
+
+
+   <a href="https://www.google.com" id="myLink">Ссылка</a>
+   <br><br><br><br>
+   
+   <button onclick="handleEvent(event)" onmouseenter="handleMouseEnter(event)"
+     onmouseleave="handleMouseLeave(event)" onkeypress="handleKeyPress(event)">Button</button>
+
+    <p onclick="handleEvent(event)" onmouseenter="handleMouseEnter(event)" 
+  onmouseleave="handleMouseLeave(event)" onkeypress="handleKeyPress(event)">Paragraph</p>
+
+  <img src="https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg"
+   onclick="handleEvent(event)" onmouseenter="handleMouseEnter(event)" 
+   onmouseleave="handleMouseLeave(event)" onkeypress="handleKeyPress(event)">
+   <br>
+
+  <input type="text" onclick="handleEvent(event)" onmouseenter="handleMouseEnter(event)"
+   onmouseleave="handleMouseLeave(event)" onkeypress="handleKeyPress(event)">
+
+  <a href="#" onclick="handleEvent(event)" onmouseenter="handleMouseEnter(event)" 
+  onmouseleave="handleMouseLeave(event)" onkeypress="handleKeyPress(event)">Link</a>
+
+  <br><br><br><br>
+  <table id="myTable">
+   <tr>
+     <td>Строка 1, Ячейка 1</td>
+     <td>Строка 1, Ячейка 2</td>
+   </tr>
+   <tr>
+     <td>Строка 2, Ячейка 1</td>
+     <td>Строка 2, Ячейка 2</td>
+   </tr>
+   
+ </table>
+ 
+  <script src="script.js"> </script>
+</body>
+</html>
+

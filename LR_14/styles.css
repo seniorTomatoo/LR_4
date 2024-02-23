@@ -1,0 +1,68 @@
+#div1, #div2 {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+figure img {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: absolute;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    right: 300px;
+    
+}
+
+.slider-container img {
+    width: 45%;
+    display: block;
+    transition: opacity 0.5s;
+}
+
+
+#prevBtn, #nextBtn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-1%);
+    background-color: greenyellow;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    position: relative;
+}
+
+#nextBtn {
+    position: relative;
+}
+
+
+
+.slider {
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    width: 500px;
+    height: 200px;
+    flex-shrink: 0;
+    transition: transform 1s;
+}
+
+#changePic {
+    margin-top: 20px;
+}

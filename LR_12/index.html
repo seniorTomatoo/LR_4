@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>LR_14</title>
+  
+</head>
+<body>
+  <main>
+
+  <h1>Заголовок 1</h1>
+    <p>Это абзац.</p>
+
+    <form>
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Отправить">
+    </form>
+
+    <p>Это ещё один абзац.</p>
+
+    <div>
+      <h2>Заголовок 2</h2>
+      <p>Это вложенный абзац.</p>
+    </div>
+
+  </main>
+
+  <ol id="list">
+  <li>Январь</li>
+  <li>Февраль</li>
+  <li>Март</li>
+  <li>Апрель</li>
+  <li>Май</li>
+  </ol>
+
+  <table>
+    <tr>
+    <th>№</th>
+    <th>Название месяца</th>
+    </tr>
+  </table>
+
+  <button id="showHeadings">Показать заголовки</button>
+  <br><br>
+  
+  <p id="text">Текст</p>
+    
+  <input type="radio" id="yes" name="answer" value="yes" onchange="changeText()">
+    <label type="radio" for="yes">Да</label>
+  <br>
+
+  <input  type="radio" id="no" name="answer" value="no" onchange="changeText()">
+    <label type="radio" for="no">Нет</label>
+  <br>
+  <h1>Тест: Бытовая техника</h1>
+
+  <button onclick="startTest()">Начать тест по бытовой технике</button>
+
+  <div id="test-container" style="display: none;">
+      <div class="question-container">
+          <p>Вопрос 1: Что такое микроволновая печь?</p>
+          <input type="radio" id="q1-a1" name="q1" value="a1">
+          <label for="q1-a1">А) Устройство для глажки одежды</label><br>
+          <input type="radio" id="q1-a2" name="q1" value="a2">
+          <label for="q1-a2">Б) Печь для выпечки тортов</label><br>
+          <input type="radio" id="q1-a3" name="q1" value="a3">
+          <label for="q1-a3">В) Прибор для нагревания и приготовления пищи</label>
+      </div>
+
+      <div class="question-container">
+          <p>Вопрос 2: Какая электроплита работает на газе и электричестве одновременно?</p>
+          <input type="checkbox" id="q2-a1" name="q2" value="a1">
+          <label for="q2-a1">А) Керамическая плита</label><br>
+          <input type="checkbox" id="q2-a2" name="q2" value="a2">
+          <label for="q2-a2">Б) Индукционная плита</label><br>
+          <input type="checkbox" id="q2-a3" name="q2" value="a3">
+          <label for="q2-a3">В) Электрокерамическая плита</label><br>
+          <input type="checkbox" id="q2-a4" name="q2" value="a4">
+          <label for="q2-a4">Г) Газовая плита</label>
+      </div>
+
+      <div class="question-container">
+          <p>Вопрос 3: Что такое стиральная машина?</p>
+          <input type="text" id="q3-answer" name="q3">
+      </div>
+
+      <button onclick="showResult()">Результат</button>
+  </div>
+
+  <div class="result" id="result-container">
+      <h3>Результаты:</h3>
+      <ul id="result-list"></ul>
+      <p id="time-taken"></p>
+  </div>
+
+  <script src="script.js"> </script>
+</body>
+</html>
+
+
